@@ -1,0 +1,53 @@
+/* PostList.css */
+
+.post-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .post-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .post-item {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .post-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .post-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .post-item:hover .post-title {
+    color: #000;
+  }
+  
+  .post-body {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
